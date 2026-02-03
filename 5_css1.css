@@ -1,0 +1,112 @@
+/* 5_css1.css */
+
+body {
+    background-color: lightblue; /* matches RGB(173,216,230) */
+    margin: 8px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 44px;
+    font-weight: 800;
+    margin: 20px 0 10px;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    margin: 30px 0 10px;
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 1.35;
+    margin: 16px 0;
+}
+
+/* 2nd paragraph boxed style */
+#paragraph2 {
+    background: #ffffff;
+    border: 4px solid green;
+    box-sizing: border-box;
+    width: 1050px;
+    padding: 25px 55px;
+    margin: 20px 0 20px 20px;
+    line-height: 2;
+}
+
+/* 4th and 5th paragraphs */
+p.blue {
+    background: navy;
+    color: #ffffff;
+    border: 1px solid #000000;
+    padding: 16px;
+    margin: 20px 0;
+}
+
+/* Ordered list with 2-digit numbers like 01. */
+ol {
+    margin: 0;
+    padding: 0;
+    counter-reset: item;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
+}
+
+ol li {
+    list-style: none;
+    counter-increment: item;
+    margin: 2px 0;
+}
+
+ol li::before {
+    content: counter(item, decimal-leading-zero) ". ";
+    color: #000000;
+}
+
+/* List item link color (blue) */
+ol li a,
+ol li a:visited {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+/* w3schools link color (red) */
+a[target="_blank"],
+a[target="_blank"]:visited {
+    color: #c00000;
+    text-decoration: underline;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse; /* overlapping borders */
+    width: 700px;
+    margin-top: 10px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 6px 8px;
+    vertical-align: top;
+}
+
+th {
+    background: #d2d2d2; /* different from td */
+}
+
+td {
+    background: #ffffff;
+}
