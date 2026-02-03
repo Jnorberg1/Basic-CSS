@@ -1,4 +1,4 @@
-/* 5_css1.css */
+
 
 body {
     background-color: lightblue; /* matches RGB(173,216,230) */
@@ -54,7 +54,7 @@ p.blue {
     margin: 20px 0;
 }
 
-/* Ordered list with 2-digit numbers like 01. */
+/* Ordered list with 2-digit numbers. */
 ol {
     margin: 0;
     padding: 0;
@@ -74,14 +74,14 @@ ol li::before {
     color: #000000;
 }
 
-/* List item link color (blue) */
+/* List item link color */
 ol li a,
 ol li a:visited {
     color: #0000EE;
     text-decoration: underline;
 }
 
-/* w3schools link color (red) */
+/* w3schools link color */
 a[target="_blank"],
 a[target="_blank"]:visited {
     color: #c00000;
